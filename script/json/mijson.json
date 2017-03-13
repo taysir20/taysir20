@@ -1,0 +1,42 @@
+{
+	"Proyectos": [{
+		"titulo": "Curriculum Vitae",
+		"FechaRealizacion": "07/12/2016",
+		"Descripcion": "Mi Curriculum Vitae",
+		"link": "https://taysir20.github.io/cv/index.html",
+		"MiembrosGrupo": "MiembrosGrupo: Individual",
+		"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+		"Disponible": "Si",
+		"destacadoImagen": "css/destacado.png",
+		"Destacado": "Si",
+		"Responsive": "Responsive: No",
+		"visualizacionRecomendada": "Visualización Recomendada: 1920x1200",
+		"imagen": "css/curriculum.png"
+	}, {
+		"titulo": "Cinéfilos",
+		"FechaRealizacion": "29/10/2016",
+		"Descripcion": "Glosario con las mejores películas del 2015 categorizadas por género.",
+		"link": "https://taysir20.github.io/glosario/index.html",
+		"MiembrosGrupo": "MiembrosGrupo: Individual",
+		"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+		"Disponible": "Si",
+		"destacadoImagen": "css/destacado.png",
+		"Destacado": "Si",
+		"Responsive": "Responsive: No",
+		"visualizacionRecomendada": "Visualización Recomendada: 1920x1200",
+		"imagen": "css/glosario.png"
+	}, {
+		"titulo": "Transportes Wallet",
+		"FechaRealizacion": "28/11/2016",
+		"Descripcion": "Sitio web basado en la temática de una compañía de transportes pesados",
+		"link": "https://taysir20.github.io/webgrupal/index.html",
+		"MiembrosGrupo": "MiembrosGrupo: TaysirAl-Shareef, Javier Fernández, Lucas Gemperle",
+		"AsignaturasRelacionadas": "Asignaturas Relacionadas: Lenguaje de Marcas",
+		"Disponible": "Si",
+		"destacadoImagen": "css/destacado.png",
+		"Destacado": "No",
+		"Responsive": "Responsive: No",
+		"visualizacionRecomendada": "Visualización Recomendada: 1920x1200",
+		"imagen": "css/web.png"
+	}]
+}

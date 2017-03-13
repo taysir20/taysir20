@@ -1,0 +1,315 @@
+
+body{
+	margin: 0;
+}
+body header{
+	background-image:url(cabecera.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	height:60%;
+}
+body header h1{
+	text-align:center;
+	margin:auto;
+	color:white;
+	
+}
+
+body header .perfil{
+	position:relative;
+	display:inline-block;
+	margin-left:50%;
+	margin-top:2%;
+	transform:translateX(-50%);
+	border:3px white solid;
+	border-radius:100%; /*Redondea los bordes*/
+	width:15%;
+	
+}
+
+
+.perfil:hover{
+	display:block;
+	transition:1.5s ease;
+	transform:translateX(-100%);
+	margin-left:50%;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.info{
+	font-family: 'Rubik Mono One', sans-serif;
+	background-color:#68B3AE;
+	width:40%;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	position:relative;
+	top:-150px;
+	left:660px;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	opacity:0;
+	
+}
+
+	
+
+.perfil:hover ~.info{
+	transition:3s ease;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.79);
+	opacity:1;
+	margin-left:5%;
+	margin-top:2%;
+	margin-bottom:2%;
+
+}
+body{
+	background-color:white;
+	margin:0;
+}
+section{
+	
+	background-color:white;
+	text-align:center;
+}
+section .proyectos{
+	width:25%;
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left:50%;
+	transform:translateX(-100%);
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+.miImagen{
+	width:100%;
+	height:100%;
+	
+}
+
+.destacado{
+	position:relative;
+	top:-50px;
+	left:-30px;
+	display:inline-block;
+	width:5%;	
+	float:right;
+}
+.stylePadre{
+	display:inline-block;
+	margin:1%;
+	width:25%;
+	overflow:hidden;
+	padding:2%;
+
+	
+}
+.stylePadre h2{
+	
+	font-family: 'Open Sans', sans-serif;
+	color:black;
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 3s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+
+#miFooter{
+	background-color:#003E5B;
+}
+.style{
+	background-color:#00AF50;
+	background-color:white;
+	/*border: #FF6347 2px solid;*/
+	width: 98%;
+	height:250px;
+	-webkit-border-radius:5px; /*Redondea los bordes*/
+	-moz-border-radius:5px; /*Redondea los bordes*/
+	border-radius:5px; /*Redondea los bordes*/
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+	overflow:hidden;	
+}
+button{
+	cursor:pointer;
+	background-color: white;
+	width:30%;
+	height:30%;
+	border-radius:15%;
+	margin-top:0%;
+	font-color:black;
+	font-weight:bolder;
+	
+}
+
+
+
+.style:hover{/*Estas tres funciones para crear el efecto del tamaño eligiendo la scala que queremos*/
+	transition:2s ease;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.76);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.76);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.76);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	
+}
+
+
+.miHijo{
+	background-color:#BB3939;
+	font-family: 'Cabin', sans-serif;
+	color:white;
+	font-size:100%;
+	background-size:100%;
+	top:-100%;
+	width: 100%;
+	height:100%;
+	/*overflow:hidden;*/
+	position:absolute;
+	z-index:5;
+	visibility:hidden; /*no visible*/
+	-webkit-border-radius:5px; /*Redondea los bordes*/
+	-moz-border-radius:5px; /*Redondea los bordes*/
+	border-radius:5px; /*Redondea los bordes*/
+	/*border:red 2px solid;*/
+	
+}
+
+
+.style:hover .miHijo{
+	animation-play-state:paused;
+	transition:2s ease;
+	visibility:visible;
+	position:absolute;
+	top:0%;
+}
+
+p{
+	text-align:left;
+	margin-left:5%;
+}
+
+
+.contactame{
+	display:inline-block;
+	margin-left:0;
+	width:25%;
+	margin-top:0;
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+
+.email{
+	display:inline-block;
+	width:7%;
+	margin-left:12.5%;
+	opacity:0.5;
+	margin-bottom:5%;
+	
+}
+.linkedin{
+	display:inline-block;
+	width:7%;
+	margin-left:2%;
+	opacity:0.5;
+	margin-bottom:5%;
+}
+.instagram{
+	display:inline-block;
+	width:7%;
+	margin-left:2%;
+	opacity:0.5;
+	margin-bottom:5%;
+}
+.email:hover{
+	cursor:pointer;
+	opacity:1;
+	
+}
+.linkedin:hover{
+	cursor:pointer;
+	opacity:1;
+	
+}
+.instagram:hover{
+	cursor:pointer;
+	opacity:1;
+	
+}
+
+#id02{
+	background-color:white;
+	width:100%;
+	
+}
+#id02 .myPointer{
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top:5%;
+	opacity:0.5;
+	
+	
+}
+
+.myPointer:hover{
+	cursor:pointer;
+	transition:2s ease;
+	
+}
+
+#id02:hover .utad{
+	transition:3s ease;
+	width:20%;
+	opacity:1;
+}
+#id02:hover .sobreMi{
+	transition:2s ease;
+	font-size:25px;
+	opacity:1;
+	
+}
+.utad{
+	width:15%;
+	margin-left:80%;
+	opacity:0;
+}
+.sobreMi{
+	opacity:0;
+	font-family: 'Gloria Hallelujah', cursive;
+	
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:700px){
+.stylePadre{
+	width:20%;
+
+	}
+}

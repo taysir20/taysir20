@@ -1,0 +1,503 @@
+﻿
+/*box-sizing: border-box*/
+
+
+body{
+	background-image:url(../img/fondo.jpg);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	background-color: #8D5C31;
+
+}
+.logo{
+	/*border:black 2px solid;*/
+	-webkit-border-radius:15px; /*Redondea los bordes*/
+	-moz-border-radius:15px; /*Redondea los bordes*/
+	border-radius:15px; /*Redondea los bordes*/
+	width:500px;
+	height:400px;
+	background-image:url(../img/1.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	
+}
+.logo:hover{ 
+	display:block;
+	transition:2s ease;
+	width:700px;
+	
+}
+.logo:hover .intro{ 
+	
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	transition-delay: 1s;
+	visibility:visible; /*usamos visibility para que coja el delay de la transición del hover, pues con display no funciona*/
+	width:280px;
+	height:230px;
+	
+}
+.logo  h1{
+	
+	text-align:center;
+	font-family: verdana;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	position:relative;
+	top:362px;
+	background:#FFEBCD;
+
+}
+
+.intro{
+	/*border:red 2px solid;*/
+	background-image:url(../img/bocadillo.png);
+	visibility:hidden;
+	position:absolute;
+	left:380px;
+	bottom:870px;
+	width:50px;
+	height:50px;
+	
+}
+.intro p{
+	padding-top:30px;
+	padding-left:70px;
+	padding-right:40px;
+	font-family:verdana;
+	font-size:20px;
+	font-weight:bold; /*para ponerlo en negrita*/
+}
+
+.sol{
+	/*border: orange 2px solid;*/
+	background-image:url(../img/sol.gif);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:300px;
+	height:220px;
+	position:absolute;
+	left:1500px;
+	bottom:900px;
+	z-index:6; /*el div del sol estará encima del div despegable*/
+	
+}
+
+.desplegable{
+	/*border: red 2px solid;*/
+	background-image:url(../img/despegable.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:250px;
+	height:150px;
+	position:absolute;
+	left:20px;
+	top:20px;
+	z-index:5;
+	visibility:hidden; /*no visible*/
+	
+
+}
+
+.desplegable p{
+	padding-left:25px;
+	padding-right:20px;
+	padding-top:35px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.sol:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.sol:hover .desplegable{
+	transition-delay: 3s;
+	visibility:visible;
+	transition:2s ease;
+	position:absolute;
+	top:170px;
+	
+}
+.desplegable:hover{
+	
+	
+}
+.arbol{
+	background-image:url(../img/arbol.png);
+	/*border:red 2px solid;*/
+	width:1000px;
+	height:1000px;
+	position:absolute;
+	top:625px;
+	left:350px;
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	margin:auto; /*centro el div*/
+	
+}
+
+.cartel{
+	/*border: red 2px solid;*/
+	background-image:url(../img/cartel.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:300px;
+	height:320px;
+	position:absolute;
+	left:1500px;
+	top:850px;
+}
+.color{
+	color:white;
+}
+.color:visited{ /*para que se mantenga el color al hacer click*/
+	color:white;
+}
+
+.cartel .p1{
+	padding-left:140px;
+	padding-top:20px;
+	-webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg); /*para rotar un elemento en la dirección que queramos*/
+
+}
+
+.cartel .p2{
+	padding-left:100px;
+	padding-top:25px;
+	-webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+	color:black;
+}
+
+.cartel .p3{
+	padding-left:145px;
+	padding-top:25px;
+	-webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+	color:black;
+}
+
+.rama1{
+	background-image:url(../img/arbol-img1.gif);
+	background-repeat:no-repeat;
+	/*border:red 2px solid;*/
+	width: 130px;
+	height:130px;
+	position: relative;
+	top: 60px;
+	left:160px;
+}
+.arbol h3{
+	margin-top:0;
+	margin-left:25px;
+	
+}
+.hijo{
+	background-image:url(../img/tablon.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:-300px;
+	left:650px;
+	width:400px;
+	height:300px;
+	/*border:red 2px solid;*/
+	display:none; /* Para que no se vea el div, y no reserva su espacio a diferencia de usar visibility*/
+}
+
+.hijo p{
+	padding-left:70px; /*con el padding prporcionamos la distancia que queremos que nos deje respecto del elmento al que pertenece*/
+	padding-right:60px;
+	font:cursive;
+	
+}
+
+.hijo h2{
+	padding-left:130px;
+}
+
+.rama1:hover{/*Estas tres funciones para crear el efecto del tamaño eligiendo la scala que queremos*/
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.rama1:hover .hijo{
+	display:block; /* Hay que colocar un tipo de display distinto a none para que sea, peude ser cualquier*/	
+	transition:5s ease;
+	
+}
+
+.rama2{
+	/*border:red 2px solid;*/
+	background-image:url(../img/curriculum.png);
+	background-repeat:no-repeat;
+	background-size:100px;
+	width: 110px;
+	height:100px;
+	position: relative;
+	top:140px;
+	left:35px;
+}
+
+.rama2:hover{/*Estas tres funciones para crear el efecto del tamaño eligiendo la scala que queremos*/
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.rama2 h3{
+	padding-left:25px;
+}
+
+.hijo2{
+	background-image:url(../img/posit.png);
+	padding-bottom:60px;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+	right:100px;
+	top:-300px;
+	width:400px;
+	height:300px;
+	/*border:red 2px solid;*/
+	display:none; /* Para que no se vea el div, y no reserva su espacio a diferencia de usar visibility*/
+}
+
+.rama2:hover .hijo2{
+	display:block; /* Hay que colocar un tipo de display distinto a none para que sea, peude ser cualquier*/	
+	transition:5s ease;
+}
+
+.hijo2 p{
+	padding-left:80px;
+	padding-right:75px;
+	padding-top:45px;
+	text-align:justify;
+	font-family:verdana;
+}
+
+.rama3{
+	/*border: red 2px solid;*/
+	background-image:url(../img/estudios.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:115px;
+	height:100px;
+	position:absolute;
+	left:415px;
+	top:35px;
+}
+
+.rama3:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.hijo3{
+	/*border: red 2px solid;*/
+	background-image:url(../img/nota.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:400px;
+	height:300px;
+	position:absolute;
+	bottom:180px;
+	display:none;
+}
+
+.hijo3 p{
+	text-align:justify;
+	padding-top:20px;
+	padding-left:65px;
+	padding-right:35px;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold; /*para ponerlo en negrita*/
+	
+}
+
+.hijo3 h5{
+	padding-left:165px;
+	font-family: verdana;
+}
+
+.rama3:hover .hijo3{
+	display:block;
+	transition:5s ease;
+}
+
+.rama4 {
+	/*border:red 2px solid;*/
+	background-image:url(../img/aptitudes.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:650px;
+	top:65px;
+	z-index:8; /*sirve para que un div se vea por encima de otro, solo funciona con divs pertenecientes al mismo padre*/
+}
+
+.rama4:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.rama4 h5{
+	padding-left:33px;
+	padding-top:40px;
+	color:white;
+}
+
+.hijo4{
+	/*border: red 2px solid;*/
+	background-image:url(../img/blocNotas.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:500px;
+	height:400px;
+	position:absolute;
+	top:-420px;
+	left:-150px;
+	display:none;
+	z-index:6;
+}
+
+.hijo4 p{
+	padding-left:275px;
+	padding-right:30px;
+	padding-top:55px;
+	font-weight:bold; /*para ponerlo en negrita*/
+	font-size:18px;
+	
+}
+
+.hijo4 .yo{
+	/*border: red 2px solid;*/
+	-webkit-border-radius:30px; /*Redondea los bordes*/
+	-moz-border-radius:30px; /*Redondea los bordes para navegadores mozilla*/
+	border-radius:30px; /*Redondea los bordes*/
+	background-image:url(../img/yo.jpg);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:60px;
+	bottom:150px;
+	
+}
+
+.rama4:hover .hijo4{
+	display:block;
+	transition:5s ease;
+}
+
+.rama5{
+	/*border: red 2px solid;*/
+	background-image:url(../img/datosInteres.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:125px;
+	height:90px;
+	position:absolute;
+	left:255px; 
+	top:350px;
+	z-index: 6;
+
+}
+
+.rama5:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.rama5 h4{
+	padding-left:10px;
+	padding-top:45px;
+}
+
+.hijo5{
+	/*border: red 2px solid;*/
+	background-image:url(../img/pergamino.gif);
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:400px;
+	height:520px;
+	position:absolute;
+	left:700px;
+	top:-700px;
+	display:none;
+	z-index:5;
+}
+
+.hijo5 p{
+
+	font-style:italic;
+	font-size:20px;
+	font-weight:bold; /*para ponerlo en negrita*/
+	padding-left:90px;
+	padding-right:60px;
+	padding-top:100px;
+}
+
+.rama5:hover .hijo5{
+	display:block;
+	transition:5s ease;
+}
+
+.rama6{
+	/*border: red 2px solid;*/
+	background-image:url(../img/contacto.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:125px;
+	height:100px;
+	position:absolute;
+	left:815px;
+	top:230px;
+	
+}
+.rama6:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.hijo6{
+	/*border:red 2px solid;*/
+	background-image:url(../img/carta.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:310px;
+	height:230px;
+	position:absolute;
+	right:100px;
+	top:100px;
+	display:none;
+}
+
+.hijo6 p{
+	padding-left:50px;
+	padding-right:40px;
+	padding-top:50px;
+	text-align:justify;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.rama6:hover .hijo6{
+	display:block;
+	transition:5s ease;
+}

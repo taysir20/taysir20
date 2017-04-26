@@ -384,11 +384,22 @@ p{
 }
 
 
+@media screen and (min-width:900px) and (max-width:1200px){
+.info{
+	top:-120px;
+	left:540px;
+	font-size:12px;
+	width:35%;
+	}
+
+}
+
 @media screen and (min-width:1200px){
 .info{
 	top:-120px;
-	left:800px;
-
+	left:650px;
+	font-size:12px;
+	width:35%;
 	}
 
 }

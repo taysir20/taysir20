@@ -1,0 +1,98 @@
+.img1{
+	height: 500px;
+	border-style: solid;
+	border-width:5px;
+	border-color:brown;
+}
+
+#imgcenter{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border:none;
+ }
+ 
+.coverpage{
+	background-image:url(image/ENCABEZADO.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;	
+ }
+ 
+.column-left{
+	float:left;
+	padding:50px;
+ }
+ 
+.browser{
+	background-color:#F6CEF5;
+	text-align:center;
+ }
+ 
+body{
+    background-color:#3399ff;
+    background-repeat:no-repeat;
+    background-position:right top;
+}
+
+ul{
+	list-style:none;/* Eliminamos el puntito negro */
+}
+
+hr{
+	width:50%; /* RECORDATORIO: hacer separaciones con línea entre */
+	align:center;
+}
+
+.film{
+	padding:70px;
+	text-align:center;
+	background-color:#E0F8F7;
+	border-style:dashed;
+	border-width:8px;
+	border-color:black;
+	font:oblique bold 120% cursive;
+	width:90%;
+	margin:auto;
+}
+
+#imgcenter{
+	height: 500px;
+	width:1000px;
+}
+
+h1,p{
+    color:black;
+	text-align:justify;
+}
+
+h2,h3{
+	text-align:center;
+	color: black;
+}
+
+.trailer{
+	border-style:solid;
+	border-width:5px;
+	border-color:orange;
+}
+
+ul{
+	font:oblique bold 120% cursive;
+}
+
+.start{
+	padding:70px;
+	text-align:center;
+	background-color:#A9D0F5;
+	border-style:solid;
+	border-width:10px;
+	border-color:#8181F7;
+	font:oblique bold 120% cursive;
+	hight:20%;
+	width:20%;
+	margin:auto;
+}
+
+.center{
+	text-align:center;
+}

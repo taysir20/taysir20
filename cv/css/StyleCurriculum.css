@@ -1,0 +1,33 @@
+body{
+	background-image:url(../img/fondo.jpg);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	background-color: #8D5C31;
+
+}
+
+.CV{
+	/*border: red 2px solid;*/
+	margin:auto;
+	width:1000px;
+	height:1000px;
+}
+
+.cartelCurriculum{
+	/*border:red 2px solid;*/
+	background-image:url(../img/cartelCurriculum.png);
+	background-repeat: no-repeat; /*Para que no se repita la imágen de fondo del body*/
+	background-size: 100%; /* para que la imagen del body ocupe todo su ancho y alto*/
+	width:170px;
+	height:120px;
+	position:absolute;
+	top:20px;
+}
+
+.cartelCurriculum p{
+	padding-left:55px;
+	padding-top:30px;
+	font-style:italic;
+	font-size:20px;
+	font-weight:bold;
+}

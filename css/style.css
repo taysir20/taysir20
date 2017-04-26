@@ -305,6 +305,19 @@ p{
 	
 }
 
+@media screen and (min-width:300px) and (max-width:570px){
+	body header h1{
+	font-size:10px;
+	
+}
+	.perfil:hover{
+	display:block;
+	transform:translateX(-50%);
+	margin-left:50%;
+	
+}
+	.info{
+	display:none
 
 @media screen and (min-width:300px) and (max-width:570px){
 	body header h1{
@@ -384,7 +397,7 @@ p{
 }
 
 
-@media screen and (min-width:900px) and (max-width:1200px){
+@media screen and (min-width:900px) and (max-width:1199px){
 .info{
 	top:-120px;
 	left:540px;
@@ -397,8 +410,8 @@ p{
 @media screen and (min-width:1200px){
 .info{
 	top:-120px;
-	left:650px;
-	font-size:12px;
+	left:900px;
+	font-size:20px;
 	width:35%;
 	}
 
